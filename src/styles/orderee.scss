@@ -1,0 +1,31 @@
+@import "utils.scss";
+
+
+
+/* *************** ---------- ORDEREE ---------- *************** */
+.orderee {
+  /*background: #fc3;*/
+  display: inline-block;
+  width: 100%; /* check orderer.scss for custom col size overrides */
+  padding: $gutter;
+  @include transition(transform);
+  &:hover {
+    transform: scale(1.05);
+  }
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

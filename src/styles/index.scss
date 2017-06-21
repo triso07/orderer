@@ -1,0 +1,53 @@
+@import "utils.scss";
+
+
+
+/* *************** ---------- RESETS ---------- *************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: #{$fontBaseline}px;
+}
+
+
+
+
+
+/* *************** ---------- LAYOUT ---------- *************** */
+#container {
+  margin: 0 auto;
+  width: toUnit(1200);
+}
+
+
+
+
+
+/* ---------- MEDIA QUERIES ---------- */
+/* excuse these media queries, I added these last minute (I'd more than likely treat this differently potentially using mixins) */
+@media (max-width: 810px) {
+  body { font-size: 80%; };
+  #container { width: 90%; }
+  .orderer .orderee { width: 100%!important; }
+}
+@media (min-width: 810px) and (max-width: 940px) {
+  body { font-size: 80%; };
+  #container { width: toUnit(1000); }
+}
+@media (min-width: 940px) and (max-width: 1020px) {
+  body { font-size: 80%; };
+}
+@media (min-width: 1020px) and (max-width: 1120px) {
+  body { font-size: 85%; };
+}
+@media (min-width: 1120px) and (max-width: 1500px) {
+  body { font-size: 100%; };
+}
+@media (min-width: 1501px) {
+}
+
+

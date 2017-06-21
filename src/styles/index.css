@@ -1,0 +1,48 @@
+/* *************** ---------- HELPERS ---------- *************** */
+/* ----- FUNCTIONS ----- */
+/* ----- VARS ----- */
+/* base pixel size (used to calculate EM values) */
+/* sets standard vertical spacing from give PX value to EMs */
+/* ----- MIXINS ----- */
+/* *************** ---------- RESETS ---------- *************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 16px; }
+
+/* *************** ---------- LAYOUT ---------- *************** */
+#container {
+  margin: 0 auto;
+  width: 75em; }
+
+/* ---------- MEDIA QUERIES ---------- */
+/* excuse these media queries, I added these last minute (I'd more than likely treat this differently potentially using mixins) */
+@media (max-width: 810px) {
+  body {
+    font-size: 80%; }
+  #container {
+    width: 90%; }
+  .orderer .orderee {
+    width: 100% !important; } }
+
+@media (min-width: 810px) and (max-width: 940px) {
+  body {
+    font-size: 80%; }
+  #container {
+    width: 62.5em; } }
+
+@media (min-width: 940px) and (max-width: 1020px) {
+  body {
+    font-size: 80%; } }
+
+@media (min-width: 1020px) and (max-width: 1120px) {
+  body {
+    font-size: 85%; } }
+
+@media (min-width: 1120px) and (max-width: 1500px) {
+  body {
+    font-size: 100%; } }

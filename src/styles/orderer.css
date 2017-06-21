@@ -1,0 +1,22 @@
+/* *************** ---------- HELPERS ---------- *************** */
+/* ----- FUNCTIONS ----- */
+/* ----- VARS ----- */
+/* base pixel size (used to calculate EM values) */
+/* sets standard vertical spacing from give PX value to EMs */
+/* ----- MIXINS ----- */
+/* *************** ---------- ORDERER ---------- *************** */
+.orderer {
+  /*background: #ccc;*/
+  margin: 0 auto;
+  width: 90%;
+  /* see orderee.scss for details */ }
+  .orderer.cols-2 .orderee {
+    width: 50%; }
+  .orderer.cols-3 .orderee {
+    width: 33.3%; }
+  .orderer.cols-4 .orderee {
+    width: 25%; }
+  .orderer.cols-5 .orderee {
+    width: 20%; }
+  .orderer.cols-6 .orderee {
+    width: 16.6%; }
