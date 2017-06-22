@@ -7,14 +7,19 @@
 /* *************** ---------- ORDEREE ---------- *************** */
 .orderee {
   /*background: #fc3;*/
+  cursor: grab;
   display: inline-block;
   width: 100%;
   /* check orderer.scss for custom col size overrides */
   padding: 0.625em;
   transition: transform 0.2s linear 0s; }
+  .orderee:active {
+    cursor: grabbing;
+    /* html/css needs to add cursor states for drag and drop grrrrr */ }
   .orderee:hover {
-    transform: scale(1.05); }
+    transform: scale(1.07); }
   .orderee img {
     width: 100%;
     height: auto;
+    pointer-events: none;
     vertical-align: middle; }

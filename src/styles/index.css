@@ -17,7 +17,15 @@ body {
 /* *************** ---------- LAYOUT ---------- *************** */
 #container {
   margin: 0 auto;
+  padding-top: 0.625em;
   width: 75em; }
+
+select[name=gridSizer] {
+  background: #fc3;
+  font-size: 1.25em;
+  position: fixed;
+  top: 0.625em;
+  left: 0.625em; }
 
 /* ---------- MEDIA QUERIES ---------- */
 /* excuse these media queries, I added these last minute (I'd more than likely treat this differently potentially using mixins) */
@@ -27,7 +35,9 @@ body {
   #container {
     width: 90%; }
   .orderer .orderee {
-    width: 100% !important; } }
+    width: 100% !important; }
+  select[name=gridSizer] {
+    display: none; } }
 
 @media (min-width: 810px) and (max-width: 940px) {
   body {

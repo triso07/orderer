@@ -14,7 +14,6 @@ class Container extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			items: Object.assign([], Items), // create instance of list items so as not to mutate data
 			numOfCols: 4
 		}
 		this.handleGridSize = this.handleGridSize.bind(this);
@@ -37,7 +36,7 @@ class Container extends React.Component {
 		  		<option value="5">5</option>
 		  		<option value="6">6</option>
 		  	</select>
-		  	<Orderer type="image" cols={this.state.numOfCols} items={this.state.items} />
+		  	<Orderer type="image" cols={this.state.numOfCols} items={Items} />
 		  </div>
 		);
 	}

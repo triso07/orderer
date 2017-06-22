@@ -5,16 +5,21 @@
 /* *************** ---------- ORDEREE ---------- *************** */
 .orderee {
   /*background: #fc3;*/
+  cursor: grab;
   display: inline-block;
   width: 100%; /* check orderer.scss for custom col size overrides */
   padding: $gutter;
+  &:active {
+    cursor: grabbing; /* html/css needs to add cursor states for drag and drop grrrrr */
+  }
   @include transition(transform);
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
   }
   img {
     width: 100%;
     height: auto;
+    pointer-events: none;
     vertical-align: middle;
   }
 }
